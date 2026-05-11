@@ -4,11 +4,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Markdown Converter</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=JetBrains+Mono&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
 
+    <header>
+        <div id="logo">
+            🛠️<span>Alex</span> Builds
+        </div>
+        <nav>
+            <a href="#preview">Preview</a>
+            <a href="https://alexanderslyfield.infinityfreeapp.com/#portfolio">Other Projects</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Markdown To HTML Converter</h1>
+        <p class="subtle-text">Converts Markdown into HTML formats. Type or paste some Markdown and convert it
+            instantly.
+        </p>
+        <div id="pannels">
+            <div class="pannel">
+                <div class="pannel-header">
+                    <p>Markdown</p>
+                    <p class="subtle-text">Clear</p>
+                </div>
+                <textarea name="markdown-text" id="markdown-text" placeholder="Enter Markdown here..."></textarea>
+            </div>
+            <div class="pannel">
+                <div class="pannel-header">
+                    <p>HTML</p>
+                    <p class="subtle-text">Clear</p>
+                </div>
+                <textarea name="HTML-text" id="HMTL-text" placeholder="Converted output will appear here..."></textarea>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
