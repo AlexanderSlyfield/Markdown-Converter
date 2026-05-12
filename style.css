@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #f1f1f1;
 }
@@ -21,7 +25,9 @@ header {
     font-weight: 300;
     height: 60px;
     align-items: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
 }
 
 #logo {
@@ -44,7 +50,7 @@ nav a {
     padding: 5px 15px 5px 15px;
     text-decoration: none;
     color: #0073ff;
-    border-radius: 6px;
+    border-radius: 10px;
     transition: all 0.15s ease;
 }
 
@@ -91,7 +97,7 @@ h1 {
 #pannels {
     display: flex;
     justify-content: space-between;
-    margin: 100px 0;
+    margin: 100px 0 0;
     gap: 100px;
 }
 
@@ -133,4 +139,45 @@ textarea {
 textarea:focus {
     outline: none;
     background-color: rgb(252, 252, 252);
+}
+
+#buttons-container {
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    font-size: 1rem;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #0073ff;
+    border: none;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: all 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #005fd2;
+}
+
+#show-preview-btn {
+    background-color: rgb(104, 104, 104);
+    text-decoration: none;
+}
+
+#show-preview-btn:hover {
+    background-color: rgb(72, 72, 72);
+}
+
+#preview {
+    background-color: white;
+    height: 500px;
+    border-radius: 5px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    scroll-margin-top: 60px;
+    padding: 20px 15px;
+    text-align: start;
 }
