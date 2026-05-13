@@ -94,6 +94,20 @@ h1 {
     color: rgb(110, 110, 110);
 }
 
+.clear-btn {
+    background-color: inherit;
+    border: none;
+    border-radius: 10px;
+    padding: 2px 10px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.clear-btn:hover {
+    background-color: rgb(220, 217, 217);
+    color: rgb(85, 85, 85);
+}
+
 #pannels {
     display: flex;
     justify-content: space-between;
